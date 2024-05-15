@@ -10,6 +10,8 @@ public class PlayManager {
     public static int top_y;
     public static int bottom_y;
 
+
+
     public PlayManager(){
 
         // Main Play Area Frame
@@ -26,7 +28,7 @@ public class PlayManager {
     public void draw(Graphics2D g2){
 
         // Draw Play Area Frame
-        g2.setColor(Color.white);
+        g2.setColor(Color.WHITE);
         g2.setStroke(new BasicStroke(4F));
         g2.drawRect(left_x-4, top_y-4, WIDTH+8, HEIGHT+8);
 

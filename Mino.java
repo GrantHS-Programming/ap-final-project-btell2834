@@ -4,6 +4,7 @@ public class Mino {
 
     public Block b[] = new Block[4];
     public Block tempB[] = new Block[4];
+    int autoDropCounter = 0;
 
     public void create(Color c){
         b[0] = new Block(c);
@@ -20,7 +21,7 @@ public class Mino {
     public void updateXY(int direction) {}
     public void update(){
 
-
+        autoDropCounter++;
 
     }
 

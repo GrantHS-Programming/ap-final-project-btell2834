@@ -21,7 +21,18 @@ public class Mino {
     public void updateXY(int direction) {}
     public void update(){
 
+        // Move the mino
+
+        if(KeyHandler.downPressed)
+
         autoDropCounter++;
+        if(autoDropCounter == PlayManager.dropInterval){
+            b[0].y += Block.SIZE;
+            b[1].y += Block.SIZE;
+            b[2].y += Block.SIZE;
+            b[3].y += Block.SIZE;
+            autoDropCounter = 0;
+        }
 
     }
 
